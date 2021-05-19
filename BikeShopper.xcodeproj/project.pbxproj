@@ -16,6 +16,7 @@
 		966A55032653972A002D23B1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966A55022653972A002D23B1 /* HomeView.swift */; };
 		966A5513265398A9002D23B1 /* ShopsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966A5512265398A9002D23B1 /* ShopsView.swift */; };
 		966A55392653BCB3002D23B1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966A55382653BCB3002D23B1 /* MapView.swift */; };
+		966F23C926552A6F00EEF883 /* ShopDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966F23C826552A6F00EEF883 /* ShopDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		966A55022653972A002D23B1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		966A5512265398A9002D23B1 /* ShopsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopsView.swift; sourceTree = "<group>"; };
 		966A55382653BCB3002D23B1 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		966F23C826552A6F00EEF883 /* ShopDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				966A54D626538DDA002D23B1 /* MainView.swift */,
 				966A55022653972A002D23B1 /* HomeView.swift */,
 				966A5512265398A9002D23B1 /* ShopsView.swift */,
+				966F23C826552A6F00EEF883 /* ShopDetailView.swift */,
 				966A55382653BCB3002D23B1 /* MapView.swift */,
 				966A54D826538DDB002D23B1 /* Assets.xcassets */,
 				966A54DD26538DDB002D23B1 /* Info.plist */,
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				966F23C926552A6F00EEF883 /* ShopDetailView.swift in Sources */,
 				966A55032653972A002D23B1 /* HomeView.swift in Sources */,
 				966A54D726538DDA002D23B1 /* MainView.swift in Sources */,
 				966A55392653BCB3002D23B1 /* MapView.swift in Sources */,

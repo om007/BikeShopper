@@ -2,13 +2,17 @@
 //  MainView.swift
 //  BikeShopper
 //
-//  Created by Om Prakash Shah on 5/18/21.
+//  Created by Nikesh Jha on 5/18/21.
 //
 
 import SwiftUI
 import MapKit
 
-let startingLocation = CLLocationCoordinate2D(latitude: 51.9, longitude: -110.5) //Location to show in HomeView when app starts
+//Location to show in HomeView when app starts
+let startingLocation =
+    //CLLocationCoordinate2D(latitude: 27.7056, longitude: 85.2964) //Kathmandu
+    CLLocationCoordinate2D(latitude: 40.7831, longitude: 73.9712) //New York
+var globalRegion: MKCoordinateRegion!
 
 struct MainView: View {
     var body: some View {
