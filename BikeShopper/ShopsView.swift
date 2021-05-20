@@ -10,6 +10,7 @@ import MapKit
 
 struct ShopsView: View {
     
+    @EnvironmentObject var currentPosition: Position
     @State var allShops: [Shop] = []
     
     var body: some View {
@@ -28,7 +29,7 @@ struct ShopsView: View {
         //Creating a search request object with updated map region object and the keyword "Bike shops"
         let request = MKLocalSearch.Request()
         request.naturalLanguageQuery = "Bike shops"
-        request.region = globalRegion
+        request.region = currentPosition.region
         
         //Searching for the bike shops that falls within the secified region that is set to the seach request object
         let search = MKLocalSearch(request: request)
@@ -43,9 +44,10 @@ struct ShopsView: View {
                 allShops.append(shopObj)
             }
             
-            for _ in 0..<10 {
-                allShops += allShops
-            }
+//            //TO-REMOVE: Creating duplicate data
+//            for _ in 0..<10 {
+//                allShops += allShops
+//            }
             
             self.allShops = allShops
         })

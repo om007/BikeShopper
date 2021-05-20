@@ -10,15 +10,14 @@ import MapKit
 
 struct MapView: UIViewRepresentable {
     
-    @Binding var currentLocation: CLLocationCoordinate2D?
+    @EnvironmentObject var currentPosition: Position
+
     @Binding var selectedPlace: MKPointAnnotation?
     @Binding var showingPlaceDetails: Bool
     
     var locationManager = CLLocationManager()
     var annotations: [MKPointAnnotation]
-    
-    let radius: CLLocationDistance = 160934 //100 miles value in metres
-    
+        
     func setupManager() {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest //When you need a precise location, However, the app should be authorized to access precise location i.e. isAuthorizedForPreciseLocation should be true
         locationManager.requestWhenInUseAuthorization()
@@ -37,17 +36,12 @@ struct MapView: UIViewRepresentable {
     }
     
     func updateUIView(_ view: MKMapView, context: Context) {
-        if let currentLocation = self.currentLocation {
+        if let currentRegion = currentPosition.region {
             if let annotation = self.selectedPlace {
                 view.removeAnnotation(annotation)
             }
             view.showsUserLocation = true
-            let region = MKCoordinateRegion(center: currentLocation, latitudinalMeters: radius, longitudinalMeters: radius)
-            view.setRegion(region, animated: true)
-            
-            //TO-DO
-            globalRegion = region
-
+            view.setRegion(currentRegion, animated: true)
         } else if let annotation = self.selectedPlace {
             view.removeAnnotations(view.annotations)
             view.addAnnotation(annotation)
@@ -77,7 +71,11 @@ struct MapView: UIViewRepresentable {
         
         func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
             if centerLocationOnce {
-                parent.currentLocation = userLocation.coordinate
+                //Update the environment user's current position object
+                let newCoordinate = userLocation.coordinate
+                parent.currentPosition.coordinate = newCoordinate
+                parent.currentPosition.region = MKCoordinateRegion(center: newCoordinate, latitudinalMeters: CommonConsts.radius, longitudinalMeters: CommonConsts.radius)
+                
                 centerLocationOnce = false
             }
         }

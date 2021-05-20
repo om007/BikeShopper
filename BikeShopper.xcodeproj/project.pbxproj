@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09646F3440583F4AE5C6C810 /* Pods_BikeShopper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D68DDB83AD8D28F9266D01 /* Pods_BikeShopper.framework */; };
+		8FB927EF2656405800465CCC /* CommonConsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB927EE2656405800465CCC /* CommonConsts.swift */; };
 		966A54D526538DDA002D23B1 /* BikeShopperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966A54D426538DDA002D23B1 /* BikeShopperApp.swift */; };
 		966A54D726538DDA002D23B1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966A54D626538DDA002D23B1 /* MainView.swift */; };
 		966A54D926538DDB002D23B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 966A54D826538DDB002D23B1 /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 		966A5513265398A9002D23B1 /* ShopsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966A5512265398A9002D23B1 /* ShopsView.swift */; };
 		966A55392653BCB3002D23B1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966A55382653BCB3002D23B1 /* MapView.swift */; };
 		966F23C926552A6F00EEF883 /* ShopDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966F23C826552A6F00EEF883 /* ShopDetailView.swift */; };
+		99E64E958C718ACDE47581AB /* Pods_BikeShopperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A002364EC21B41B4808CE21 /* Pods_BikeShopperTests.framework */; };
+		F21013220CF4BB5A50191940 /* Pods_BikeShopper_BikeShopperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBCACFD64434FB02C1D79D1 /* Pods_BikeShopper_BikeShopperUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A002364EC21B41B4808CE21 /* Pods_BikeShopperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BikeShopperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12D5359E3E85286FB54A6757 /* Pods-BikeShopperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BikeShopperTests.release.xcconfig"; path = "Target Support Files/Pods-BikeShopperTests/Pods-BikeShopperTests.release.xcconfig"; sourceTree = "<group>"; };
+		5B698EDC0667FEEAE57581A8 /* Pods-BikeShopperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BikeShopperTests.debug.xcconfig"; path = "Target Support Files/Pods-BikeShopperTests/Pods-BikeShopperTests.debug.xcconfig"; sourceTree = "<group>"; };
+		87F7D93194CA6C9B66853B0D /* Pods-BikeShopper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BikeShopper.release.xcconfig"; path = "Target Support Files/Pods-BikeShopper/Pods-BikeShopper.release.xcconfig"; sourceTree = "<group>"; };
+		8DECA2013BFDCCACBF98B445 /* Pods-BikeShopper-BikeShopperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BikeShopper-BikeShopperUITests.debug.xcconfig"; path = "Target Support Files/Pods-BikeShopper-BikeShopperUITests/Pods-BikeShopper-BikeShopperUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8FB927EE2656405800465CCC /* CommonConsts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonConsts.swift; sourceTree = "<group>"; };
+		93D68DDB83AD8D28F9266D01 /* Pods_BikeShopper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BikeShopper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		966A54D126538DDA002D23B1 /* BikeShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		966A54D426538DDA002D23B1 /* BikeShopperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeShopperApp.swift; sourceTree = "<group>"; };
 		966A54D626538DDA002D23B1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -53,6 +64,9 @@
 		966A5512265398A9002D23B1 /* ShopsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopsView.swift; sourceTree = "<group>"; };
 		966A55382653BCB3002D23B1 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		966F23C826552A6F00EEF883 /* ShopDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailView.swift; sourceTree = "<group>"; };
+		BD490895FE34D92CADBA4CB4 /* Pods-BikeShopper-BikeShopperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BikeShopper-BikeShopperUITests.release.xcconfig"; path = "Target Support Files/Pods-BikeShopper-BikeShopperUITests/Pods-BikeShopper-BikeShopperUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C9FEBFD27570866E1B0DD308 /* Pods-BikeShopper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BikeShopper.debug.xcconfig"; path = "Target Support Files/Pods-BikeShopper/Pods-BikeShopper.debug.xcconfig"; sourceTree = "<group>"; };
+		EEBCACFD64434FB02C1D79D1 /* Pods_BikeShopper_BikeShopperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BikeShopper_BikeShopperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09646F3440583F4AE5C6C810 /* Pods_BikeShopper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99E64E958C718ACDE47581AB /* Pods_BikeShopperTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +90,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21013220CF4BB5A50191940 /* Pods_BikeShopper_BikeShopperUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		305F4AA684FF59758EB5ED64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9FEBFD27570866E1B0DD308 /* Pods-BikeShopper.debug.xcconfig */,
+				87F7D93194CA6C9B66853B0D /* Pods-BikeShopper.release.xcconfig */,
+				8DECA2013BFDCCACBF98B445 /* Pods-BikeShopper-BikeShopperUITests.debug.xcconfig */,
+				BD490895FE34D92CADBA4CB4 /* Pods-BikeShopper-BikeShopperUITests.release.xcconfig */,
+				5B698EDC0667FEEAE57581A8 /* Pods-BikeShopperTests.debug.xcconfig */,
+				12D5359E3E85286FB54A6757 /* Pods-BikeShopperTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3C03BFF2ECE27E9C04ED46C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93D68DDB83AD8D28F9266D01 /* Pods_BikeShopper.framework */,
+				EEBCACFD64434FB02C1D79D1 /* Pods_BikeShopper_BikeShopperUITests.framework */,
+				0A002364EC21B41B4808CE21 /* Pods_BikeShopperTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		966A54C826538DDA002D23B1 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +127,8 @@
 				966A54E526538DDB002D23B1 /* BikeShopperTests */,
 				966A54F026538DDB002D23B1 /* BikeShopperUITests */,
 				966A54D226538DDA002D23B1 /* Products */,
+				305F4AA684FF59758EB5ED64 /* Pods */,
+				3C03BFF2ECE27E9C04ED46C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +154,7 @@
 				966A54D826538DDB002D23B1 /* Assets.xcassets */,
 				966A54DD26538DDB002D23B1 /* Info.plist */,
 				966A54DA26538DDB002D23B1 /* Preview Content */,
+				8FB927EE2656405800465CCC /* CommonConsts.swift */,
 			);
 			path = BikeShopper;
 			sourceTree = "<group>";
@@ -149,6 +192,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 966A54F626538DDB002D23B1 /* Build configuration list for PBXNativeTarget "BikeShopper" */;
 			buildPhases = (
+				66D0C59639B35A3686DB073D /* [CP] Check Pods Manifest.lock */,
 				966A54CD26538DDA002D23B1 /* Sources */,
 				966A54CE26538DDA002D23B1 /* Frameworks */,
 				966A54CF26538DDA002D23B1 /* Resources */,
@@ -166,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 966A54F926538DDB002D23B1 /* Build configuration list for PBXNativeTarget "BikeShopperTests" */;
 			buildPhases = (
+				1530E9F40E289F4D1D9A2074 /* [CP] Check Pods Manifest.lock */,
 				966A54DE26538DDB002D23B1 /* Sources */,
 				966A54DF26538DDB002D23B1 /* Frameworks */,
 				966A54E026538DDB002D23B1 /* Resources */,
@@ -184,6 +229,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 966A54FC26538DDB002D23B1 /* Build configuration list for PBXNativeTarget "BikeShopperUITests" */;
 			buildPhases = (
+				C808DBFC314D81678B5F55A9 /* [CP] Check Pods Manifest.lock */,
 				966A54E926538DDB002D23B1 /* Sources */,
 				966A54EA26538DDB002D23B1 /* Frameworks */,
 				966A54EB26538DDB002D23B1 /* Resources */,
@@ -266,6 +312,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1530E9F40E289F4D1D9A2074 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BikeShopperTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66D0C59639B35A3686DB073D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BikeShopper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C808DBFC314D81678B5F55A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BikeShopper-BikeShopperUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		966A54CD26538DDA002D23B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -275,6 +390,7 @@
 				966A55032653972A002D23B1 /* HomeView.swift in Sources */,
 				966A54D726538DDA002D23B1 /* MainView.swift in Sources */,
 				966A55392653BCB3002D23B1 /* MapView.swift in Sources */,
+				8FB927EF2656405800465CCC /* CommonConsts.swift in Sources */,
 				966A5513265398A9002D23B1 /* ShopsView.swift in Sources */,
 				966A54D526538DDA002D23B1 /* BikeShopperApp.swift in Sources */,
 			);
@@ -363,7 +479,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -418,7 +534,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -430,6 +546,7 @@
 		};
 		966A54F726538DDB002D23B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9FEBFD27570866E1B0DD308 /* Pods-BikeShopper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -438,7 +555,7 @@
 				DEVELOPMENT_TEAM = 7P2J83YJ27;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BikeShopper/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,6 +569,7 @@
 		};
 		966A54F826538DDB002D23B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87F7D93194CA6C9B66853B0D /* Pods-BikeShopper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,7 +578,7 @@
 				DEVELOPMENT_TEAM = 7P2J83YJ27;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BikeShopper/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,6 +592,7 @@
 		};
 		966A54FA26538DDB002D23B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B698EDC0667FEEAE57581A8 /* Pods-BikeShopperTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -496,6 +615,7 @@
 		};
 		966A54FB26538DDB002D23B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12D5359E3E85286FB54A6757 /* Pods-BikeShopperTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -518,6 +638,7 @@
 		};
 		966A54FD26538DDB002D23B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DECA2013BFDCCACBF98B445 /* Pods-BikeShopper-BikeShopperUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -538,6 +659,7 @@
 		};
 		966A54FE26538DDB002D23B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD490895FE34D92CADBA4CB4 /* Pods-BikeShopper-BikeShopperUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

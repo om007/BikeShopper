@@ -1,8 +1,7 @@
 .DS_Store
 *.xcuserstate
-project.scworkspate/
+project.xcworkspace/
 xcuserdata/
-/MobileERP/Pods/
+/Pods/
 *.orig
-/MobileERP/GoogleService-Info.plist
-/MobileERP/Podfile.lock
+Podfile.lock
