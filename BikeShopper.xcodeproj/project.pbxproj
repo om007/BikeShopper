@@ -151,10 +151,10 @@
 				966A5512265398A9002D23B1 /* ShopsView.swift */,
 				966F23C826552A6F00EEF883 /* ShopDetailView.swift */,
 				966A55382653BCB3002D23B1 /* MapView.swift */,
+				8FB927EE2656405800465CCC /* CommonConsts.swift */,
 				966A54D826538DDB002D23B1 /* Assets.xcassets */,
 				966A54DD26538DDB002D23B1 /* Info.plist */,
 				966A54DA26538DDB002D23B1 /* Preview Content */,
-				8FB927EE2656405800465CCC /* CommonConsts.swift */,
 			);
 			path = BikeShopper;
 			sourceTree = "<group>";

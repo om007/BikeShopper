@@ -20,6 +20,7 @@ struct ShopsView: View {
             }
             .navigationBarTitle("Bike Shops", displayMode: .automatic)
         }
+        .navigationViewStyle(StackNavigationViewStyle()) //Since our UI should look the same in all form factors
         .onAppear(perform: { getNearbyBikeShops() })
     }
     
@@ -40,7 +41,8 @@ struct ShopsView: View {
                 let thumbnail = UIImage(systemName: "heart.fill")! //item.thumbnail
                 let name = item.name ?? ""
                 let addressArr = [item.placemark.thoroughfare, item.placemark.locality, item.placemark.subLocality, item.placemark.country]
-                let shopObj = Shop(thumbnail: thumbnail, locationName: name, address: addressArr.compactMap({ $0 }).joined(separator: ", "))
+                let coordinate = item.placemark.coordinate
+                let shopObj = Shop(thumbnail: thumbnail, locationName: name, address: addressArr.compactMap({ $0 }).joined(separator: ", "), coordinate: coordinate)
                 allShops.append(shopObj)
             }
             
@@ -83,11 +85,13 @@ class Shop: Identifiable {
     var thumbnail: UIImage?
     var locationName: String = "Location"
     var address: String = "Address"
+    var coordinate: CLLocationCoordinate2D?
     
-    init(thumbnail: UIImage, locationName: String, address: String) {
+    init(thumbnail: UIImage, locationName: String, address: String, coordinate: CLLocationCoordinate2D) {
         self.thumbnail = thumbnail
         self.locationName = locationName
         self.address = address
+        self.coordinate = coordinate
     }
     
 }

@@ -81,16 +81,16 @@ struct MapView: UIViewRepresentable {
         }
         
         func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-            var annotationPin = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
-            if annotationPin == nil {
-                annotationPin = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-                annotationPin?.canShowCallout = true
-                annotationPin?.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+            var annotationMarker = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+            if annotationMarker == nil {
+                annotationMarker = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                annotationMarker?.canShowCallout = true
+                //annotationMarker?.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
             } else {
-                annotationPin?.annotation = annotation
+                annotationMarker?.annotation = annotation
             }
             
-            return annotationPin
+            return annotationMarker
         }
         
         func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {

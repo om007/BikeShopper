@@ -43,9 +43,8 @@ class Position: ObservableObject {
     @Published var region: MKCoordinateRegion!
         
     init() {
-        let initialLocation = //CLLocationCoordinate2D(latitude: 27.7056, longitude: 85.2964) //Kathmandu
-            CLLocationCoordinate2D(latitude: 40.7831, longitude: 73.9712) //New York
-        coordinate = initialLocation
-        region = MKCoordinateRegion(center: initialLocation, latitudinalMeters: CommonConsts.radius, longitudinalMeters: CommonConsts.radius)
+        let initialLoc = CommonConsts.initialLocation
+        coordinate = initialLoc
+        region = MKCoordinateRegion(center: initialLoc, latitudinalMeters: CommonConsts.radius, longitudinalMeters: CommonConsts.radius)
     }
 }
