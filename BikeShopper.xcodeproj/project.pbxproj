@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,12 @@
 		966A5513265398A9002D23B1 /* ShopsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966A5512265398A9002D23B1 /* ShopsView.swift */; };
 		966A55392653BCB3002D23B1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966A55382653BCB3002D23B1 /* MapView.swift */; };
 		966F23C926552A6F00EEF883 /* ShopDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966F23C826552A6F00EEF883 /* ShopDetailView.swift */; };
+		96CCD0C5265D08C1008E4061 /* EnvironmentValues+ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CCD0C1265D08C1008E4061 /* EnvironmentValues+ImageCache.swift */; };
+		96CCD0C6265D08C1008E4061 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CCD0C2265D08C1008E4061 /* AsyncImage.swift */; };
+		96CCD0C7265D08C1008E4061 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CCD0C3265D08C1008E4061 /* ImageCache.swift */; };
+		96CCD0C8265D08C1008E4061 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CCD0C4265D08C1008E4061 /* ImageLoader.swift */; };
+		96CCD0CD265D0918008E4061 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CCD0CC265D0918008E4061 /* DataModels.swift */; };
+		96CCD0D5265D0C8B008E4061 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CCD0D4265D0C8B008E4061 /* Utils.swift */; };
 		99E64E958C718ACDE47581AB /* Pods_BikeShopperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A002364EC21B41B4808CE21 /* Pods_BikeShopperTests.framework */; };
 		F21013220CF4BB5A50191940 /* Pods_BikeShopper_BikeShopperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBCACFD64434FB02C1D79D1 /* Pods_BikeShopper_BikeShopperUITests.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +70,12 @@
 		966A5512265398A9002D23B1 /* ShopsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopsView.swift; sourceTree = "<group>"; };
 		966A55382653BCB3002D23B1 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		966F23C826552A6F00EEF883 /* ShopDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailView.swift; sourceTree = "<group>"; };
+		96CCD0C1265D08C1008E4061 /* EnvironmentValues+ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+ImageCache.swift"; sourceTree = "<group>"; };
+		96CCD0C2265D08C1008E4061 /* AsyncImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		96CCD0C3265D08C1008E4061 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		96CCD0C4265D08C1008E4061 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		96CCD0CC265D0918008E4061 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
+		96CCD0D4265D0C8B008E4061 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		BD490895FE34D92CADBA4CB4 /* Pods-BikeShopper-BikeShopperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BikeShopper-BikeShopperUITests.release.xcconfig"; path = "Target Support Files/Pods-BikeShopper-BikeShopperUITests/Pods-BikeShopper-BikeShopperUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C9FEBFD27570866E1B0DD308 /* Pods-BikeShopper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BikeShopper.debug.xcconfig"; path = "Target Support Files/Pods-BikeShopper/Pods-BikeShopper.debug.xcconfig"; sourceTree = "<group>"; };
 		EEBCACFD64434FB02C1D79D1 /* Pods_BikeShopper_BikeShopperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BikeShopper_BikeShopperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,9 +163,12 @@
 				966A5512265398A9002D23B1 /* ShopsView.swift */,
 				966F23C826552A6F00EEF883 /* ShopDetailView.swift */,
 				966A55382653BCB3002D23B1 /* MapView.swift */,
+				96CCD0CC265D0918008E4061 /* DataModels.swift */,
+				96CCD0D4265D0C8B008E4061 /* Utils.swift */,
 				8FB927EE2656405800465CCC /* CommonConsts.swift */,
 				966A54D826538DDB002D23B1 /* Assets.xcassets */,
 				966A54DD26538DDB002D23B1 /* Info.plist */,
+				96CCD0C0265D07B4008E4061 /* AsyncImage */,
 				966A54DA26538DDB002D23B1 /* Preview Content */,
 			);
 			path = BikeShopper;
@@ -185,6 +200,17 @@
 			path = BikeShopperUITests;
 			sourceTree = "<group>";
 		};
+		96CCD0C0265D07B4008E4061 /* AsyncImage */ = {
+			isa = PBXGroup;
+			children = (
+				96CCD0C2265D08C1008E4061 /* AsyncImage.swift */,
+				96CCD0C1265D08C1008E4061 /* EnvironmentValues+ImageCache.swift */,
+				96CCD0C3265D08C1008E4061 /* ImageCache.swift */,
+				96CCD0C4265D08C1008E4061 /* ImageLoader.swift */,
+			);
+			path = AsyncImage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -196,6 +222,7 @@
 				966A54CD26538DDA002D23B1 /* Sources */,
 				966A54CE26538DDA002D23B1 /* Frameworks */,
 				966A54CF26538DDA002D23B1 /* Resources */,
+				C10FEDEED6E0C7BD7ADFEF7F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +260,7 @@
 				966A54E926538DDB002D23B1 /* Sources */,
 				966A54EA26538DDB002D23B1 /* Frameworks */,
 				966A54EB26538DDB002D23B1 /* Resources */,
+				8CAD50DADE9D3A0A6E613E0A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -357,6 +385,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8CAD50DADE9D3A0A6E613E0A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BikeShopper-BikeShopperUITests/Pods-BikeShopper-BikeShopperUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BikeShopper-BikeShopperUITests/Pods-BikeShopper-BikeShopperUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BikeShopper-BikeShopperUITests/Pods-BikeShopper-BikeShopperUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C10FEDEED6E0C7BD7ADFEF7F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BikeShopper/Pods-BikeShopper-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BikeShopper/Pods-BikeShopper-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BikeShopper/Pods-BikeShopper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C808DBFC314D81678B5F55A9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -386,11 +448,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96CCD0C7265D08C1008E4061 /* ImageCache.swift in Sources */,
 				966F23C926552A6F00EEF883 /* ShopDetailView.swift in Sources */,
+				96CCD0C6265D08C1008E4061 /* AsyncImage.swift in Sources */,
 				966A55032653972A002D23B1 /* HomeView.swift in Sources */,
 				966A54D726538DDA002D23B1 /* MainView.swift in Sources */,
+				96CCD0D5265D0C8B008E4061 /* Utils.swift in Sources */,
+				96CCD0C8265D08C1008E4061 /* ImageLoader.swift in Sources */,
 				966A55392653BCB3002D23B1 /* MapView.swift in Sources */,
+				96CCD0C5265D08C1008E4061 /* EnvironmentValues+ImageCache.swift in Sources */,
 				8FB927EF2656405800465CCC /* CommonConsts.swift in Sources */,
+				96CCD0CD265D0918008E4061 /* DataModels.swift in Sources */,
 				966A5513265398A9002D23B1 /* ShopsView.swift in Sources */,
 				966A54D526538DDA002D23B1 /* BikeShopperApp.swift in Sources */,
 			);
@@ -560,7 +628,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.BikeShopper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nikesh.BikeShopper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -583,7 +651,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.BikeShopper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nikesh.BikeShopper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

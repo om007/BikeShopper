@@ -14,14 +14,16 @@ struct ShopDetailView: View {
     
     var body: some View {
         VStack {
-            Image(uiImage: shop.thumbnail!)
+            shopImage
                 .frame(width: 120, height: 120, alignment: .center)
+                .aspectRatio(contentMode: .fill)
                 .clipShape(Circle())
                 .overlay(
                     Circle().stroke(Color.blue, lineWidth: 4)
                 )
                 .shadow(radius: 10)
-            Text(shop.locationName)
+            
+            Text(shop.name)
                 .font(.title)
             
             Divider()
@@ -31,7 +33,7 @@ struct ShopDetailView: View {
                 .foregroundColor(.gray)
         }
         .padding()
-        .navigationBarTitle(Text(shop.locationName), displayMode: .inline)
+        .navigationBarTitle(Text(shop.name), displayMode: .inline)
         
         //Showing Map as well without any padding unlike in the views above
         Map(coordinateRegion: $shopRegion, annotationItems: [shop]) {
@@ -43,10 +45,12 @@ struct ShopDetailView: View {
                 span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
         })
     }
-}
-
-struct ShopDetail_Previews: PreviewProvider {
-    static var previews: some View {
-        ShopDetailView(shop: Shop(thumbnail: UIImage(systemName: "house.fill")!, locationName: "NY Bike Shop", address: "Manhattan, New York", coordinate: CommonConsts.initialLocation))
+    
+    @ViewBuilder var shopImage: some View {
+        if let imageUrl = Utils.getImageUrl_from(photoRef: shop.photoRef ?? "", maxWidth: 400) {
+            AsyncImage(url: imageUrl, placeholder: { ProgressView() }, image: { Image(uiImage: $0).resizable() })
+        } else {
+            Image(systemName: CommonConsts.placeholder)
+        }
     }
 }

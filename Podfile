@@ -6,7 +6,7 @@ target 'BikeShopper' do
   use_frameworks!
 
   # Pods for BikeShopper
-
+    pod 'GooglePlaces', '5.0.0'
 
   target 'BikeShopperTests' do
     inherit! :search_paths
