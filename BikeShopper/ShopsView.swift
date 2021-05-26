@@ -12,9 +12,9 @@ import Foundation
 struct ShopsView: View {
     
     @EnvironmentObject var currentPosition: Position
-    @State var response = ShopResponse()
-    @State var isLoading = false
-    @State var isLoadingFirstTime = true //Boolean to check view is loaded the first time
+    @State private var response = ShopResponse()
+    @State private var isLoading = false
+    @State private var isLoadingFirstTime = true //Boolean to check view is loaded the first time
     
     var body: some View {
         NavigationView {

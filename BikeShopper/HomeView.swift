@@ -11,15 +11,11 @@ import MapKit
 struct HomeView: View {
     
     @EnvironmentObject var currentPosition: Position
-    
-    @State var selectedPlace: MKPointAnnotation?
-    @State var showingPlaceDetails: Bool = false
-    
-    var locations: [MKPointAnnotation] = []
-    
+    @State private var showingPlaceDetails: Bool = false
+
     var body: some View {
         ZStack {
-            MapView(selectedPlace: $selectedPlace, showingPlaceDetails: $showingPlaceDetails, annotations: locations)
+            MapView(showingPlaceDetails: $showingPlaceDetails)
                 .edgesIgnoringSafeArea([.leading, .trailing, .bottom])
             
             VStack {

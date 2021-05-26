@@ -11,7 +11,7 @@ import MapKit
 
 struct MainView: View {
     
-    var currentPosition = Position()
+    private var currentPosition = Position()
     
     var body: some View {
         TabView {

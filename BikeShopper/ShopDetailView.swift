@@ -9,8 +9,8 @@ import SwiftUI
 import MapKit
 
 struct ShopDetailView: View {
+    @State private var shopRegion = MKCoordinateRegion()
     let shop: Shop
-    @State var shopRegion = MKCoordinateRegion()
     
     var body: some View {
         VStack {
