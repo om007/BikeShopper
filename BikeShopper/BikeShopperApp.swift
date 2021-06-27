@@ -2,7 +2,7 @@
 //  BikeShopperApp.swift
 //  BikeShopper
 //
-//  Created by Nikesh Jha on 5/18/21.
+//  Created by Om Prakash Shah on 5/18/21.
 //
 
 import SwiftUI

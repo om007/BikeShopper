@@ -2,7 +2,7 @@
 //  CommonConsts.swift
 //  BikeShopper
 //
-//  Created by Nikesh Jha on 20/05/2021.
+//  Created by Om Prakash Shah on 20/05/2021.
 //
 
 import Foundation
